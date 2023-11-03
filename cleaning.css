@@ -151,6 +151,7 @@ header {
   width: 200px;
   height: 50px;
   cursor: pointer;
+  border: #39af92;
 }
 
 .submit-call:hover {
@@ -159,6 +160,70 @@ header {
 }
 
 /* ! ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#okno {
+  height: 350px;
+  padding: 35px 20px 15px 20px;
+  border: 1px solid #48cfad;
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+
+.type-apartments,
+.type-house,
+.type-window {
+  font-size: 14px;
+  color: rgb(168, 168, 168);
+  width: 250px;
+  cursor: pointer;
+}
+
+.type-apartments:hover,
+.type-house:hover,
+.type-window:hover {
+  color: #48cfad;
+  font-weight: bold;
+}
+
+.type-title {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.type-title:hover {
+  color: #33977e;
+}
+
+#okno:target {
+  display: block;
+  display: flex;
+}
+
+.window-right {
+  background-color: #ffcd0d;
+  border-radius: 0 40px 0 0;
+  padding: 5px 20px 5px 10px;
+  margin-left: 20px;
+  color: white;
+  width: 300px;
+  height: 100%;
+  -webkit-box-shadow: 14px 18px 8px 15px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 14px 18px 8px 15px rgba(34, 60, 80, 0.15);
+  box-shadow: 14px 18px 8px 15px rgba(34, 60, 80, 0.15);
+}
+
+.window-right img {
+  width: 150px;
+  float: right;
+}
+
+.window-right-par {
+  margin: 0px;
+  font-size: 15px;
+}
 
 .header {
   display: flex;
